@@ -1,0 +1,63 @@
+header, footer{
+    width: 100%;
+    height:50px;
+    padding: 5px;
+    background-color:green;
+}
+
+
+ul.head-list{
+    text-align: end;
+}
+
+ul.head-list li{
+    display:inline;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3{
+    text-align:center;
+}
+
+img{
+    width: 100px;
+    height:100px;
+    text-align:center;
+    }
+
+#absolute-section{
+    margin-left:800px;
+    width: 300px;
+    height:300px;
+    border: 10px;
+    padding: 20px; 
+    border: 5px solid black;
+    box-shadow: 0 0 0 6px blueviolet,
+                0 0 0 15px yellowgreen;
+    text-align:center;            
+}
+
+.contact-info {
+    display: block;
+    background-color:cornsilk;
+    border: 1px solid blue;
+
+}
+
+
+
+ul.contact-list{
+    list-style: none;
+}
+#item-4, #item-5 {
+    text-decoration: none;
+    position:relative;
+    text-align: center;
+    font-size: large;
+}
+
+
