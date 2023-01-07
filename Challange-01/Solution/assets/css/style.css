@@ -5,10 +5,14 @@
 }
 
 body {
+    /* sets background colour for the complete body */
     background-color: #d9dcd6;
 }
 
+/* sets style for header class*/
+
 .header {
+    /* sets padding around class header to 20px at all sides */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -25,7 +29,9 @@ body {
 }
 
 .header div {
+    /* set top padding to 15px */ 
     padding-top: 15px;
+    /* set margin on right to be 20px*/
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,7 +40,10 @@ body {
 }
 
 .header div ul li {
+    /* property to set up object with margin and padding properties and arranging the elements with no line breaks*/
     display: inline-block;
+
+   /* since it is inline-block we can set the left margin, in this case it is 25px */
     margin-left: 25px;
 }
 
@@ -48,6 +57,7 @@ p {
 }
 
 .hero img{
+    /* set up the background image that spreads to complete width and static 800px heigt and positioned to the center */
     height: 800px;
     width: 100%;
     object-fit: cover;
@@ -58,6 +68,7 @@ p {
 
 div.content > * {
     margin-bottom: 20px;
+    /* shortcut to setup equal padding of 50 px on all 4 sides */
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -97,8 +108,11 @@ div.benefits > * {
 
 .benefits {
     margin-right: 20px;
+    /* shortcut to setup equal padding of 20 px on all 4 sides */
     padding: 20px;
+    /* clear both is shortcut to have elemnt pushed below both right an left float element */
     clear: both;
+    /* set float element on right */
     float: right;
     width: 20%;
     height: 100%;
@@ -113,11 +127,13 @@ div.benefits > * {
 
 .benefits img {
     display: block;
+    /* sets 10px top and bottom margin and then set it to center automatically*/
     margin: 10px auto;
     max-width: 150px;
 }
 
 .footer {
+    /* set automatically 30px padding on all sides*/
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
