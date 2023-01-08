@@ -1,3 +1,48 @@
+
+# Solution to Challenge 02
+
+## Solution is available at https://ruchiagarwal26.github.io/Ruchi_bootcamp/02-Challenge/
+
+## Highlights of the work Involved:
+
+![image](https://user-images.githubusercontent.com/115508901/211184179-27e8d368-ce3b-4d19-8e01-cbd20775b388.png)
+
+## User Story
+
+```
+AS An Engineer
+I want to create a web application on my portfolio
+This portfolio must contain my contact information and links to the work I have done so far
+    
+```
+## Ready for UAT
+
+```
+>> Create a web Application with below information:
+     > Displayed Name on top center of the page
+     > My Avatar on the right end of the page
+     > Links to my Art Gallery and Application Por
+     > Section which gives a brief about me
+     > Section on my contact information
+     > footer with personalized message
+
+
+>> Functionalities:
+      > Each link on the navigation bar takes the user to the respective content on the page
+      > Most of the application is developed with using flex and @media queries so that the contents can 
+        rearrage themselves based on changes in media screen dimensions
+      > Each image can be clicked and that will route to corresponding application in other window
+      > Each image has title associated to them, Therefore, upon hovering on it, related text will show up
+      > Hovering on links and paragrahs highlights text to red color and clicks highlights to green
+      > Variables are defined to reduce duplication of code
+      > I wanted to highlight myfirst application therefore it is larger as compared to other applications in the same flex container
+      > ended with a personalized footer
+      
+
+### I Hope you enjoy going over my Application
+      
+
+--------------------------------------------------------------------------------------------------------------------------------
 # 02 Advanced CSS: Portfolio
 
 ## Your Task
