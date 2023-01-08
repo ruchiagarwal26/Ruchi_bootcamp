@@ -1,0 +1,258 @@
+/*defining variables*/
+:root {
+    --bluecolor: blue;
+    --fivepx:5px;
+}
+
+/* setting up background color*/
+body{
+    background-color: #e5d8e7;
+}
+
+/* setting h1 properties for the complete html file*/
+h1{
+    font-size: 40px;
+/* using variable*/    
+    color: var(--bluecolor);
+    text-decoration: double;
+    text-align: center;
+}
+
+/* setting up the nav bar/top box with available links to
+further contents of the page*/
+/* using flex to have the items displayed in one row
+in fiex container */
+.first-box{
+    display:flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    padding:30px;
+/* using variable*/    
+    margin:10px var(--fivepx);
+    text-align:center;
+    justify-content:space-around;
+    place-items:center;
+    font-size: 25px;
+}
+
+/*when hover on any anchor tag or paragrap, text will
+show red color*/
+a:hover, p:hover{
+    color:red;
+}
+
+/*when the anchor tag is clicked or active, the text will turn green*/
+a:active{
+    color:green;
+}
+
+/*positioning the avatar to right with bottom padding*/
+.first-box img{
+    float: right;
+    padding-bottom: 100px;
+}
+
+/*setting up the flex containers for the items in 
+in the nav bar*/
+.content-boxes{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+/*these items will float on the left side of the page*/   
+    float:left;
+/*these items will cover 80% of the width of the page*/
+    width:80%;
+/*base size of these items will be 50px*/
+    flex-basis:50px;
+}
+
+/*setting up paragraph text font,color and alignment*/
+.content-boxes p{
+    font-size: 20px;
+    color: var(--bluecolor);
+    text-align: center;
+}
+
+/*properties of each section in flex container*/
+.content-boxes .section {
+    width: 100%;
+    border:1px solid black;
+    margin: 10px var(--fivepx); 
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/*specific background color and alignment of even sections*/
+.content-boxes .section:nth-child(even) {
+    background-color:#f0eafb;
+    text-align: right;
+   
+}
+
+/*specific background color and alignment of odd sections*/
+.content-boxes .section:nth-child(odd) {
+    background-color:#d0e3e5;
+    text-align: left;
+}
+
+/*setting up card properties for each element in Art Gallery*/
+/*each image and link is clickable and will open in new window*/
+/*each image shows title upon hovering on it*/
+.card {
+    width:50%;
+    border: 2px black solid;
+    margin: 2px;
+    padding: 1px;
+    flex-basis: 150px;
+    flex-shrink: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card header{
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+.card p{
+    font-size:15px;
+    padding:1px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    margin: 1px;
+}
+
+/*setting up image properties for each image in a particular card respectively*/
+.card img{
+    width:100%;
+    height:120px;
+    margin: 10px;
+    padding-bottom: .5px;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/*forcing properties for the first card that has image larger then the other cards*/
+.card.first{
+    align-self: start;
+    flex-basis: 250px;
+}
+
+/*setting up images for contact informations*/
+/*clicking on email image will open mail box in new window*/
+.img-with-text {
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    border: none;
+    margin: 2px;
+    padding: 1px;
+    transform:scale(1,1) translate(12%, 5%);
+    flex-basis: 150px;
+    font-size: 15px;
+}
+
+div.applications > * {
+    margin-top:var(--fivepx);
+    color:#d0e3e5;
+}
+
+/*setting up flex container for my application section*/
+.applications{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float:right;
+    padding:10px;
+    width:18%;
+    background-color:#f0eafb;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-basis: 100px;
+}
+
+/*setting up the first content of this container to be
+bigger than the others*/
+.applications .first-child{
+    flex-basis: 200px;
+    flex-grow: 3;
+}
+
+.applications h1{
+    color:var(--bluecolor);
+}
+
+.applications h3{
+    display:block;
+    text-align: center;
+    color: var(--bluecolor);
+    text-decoration: double;
+    text-align: center;
+    margin-top: var(--fivepx);
+    margin-bottom: var(--fivepx);
+}
+
+/*setting up common properties for all sections in the container*/
+.applications div{
+width:auto;
+margin:2px;
+padding:2px;
+text-align: center;
+border: 1px solid purple;
+}
+
+/*setting up common properties for all images in the container*/
+.applications img{
+    width:80%;
+    margin:var(--fivepx);
+    padding:var(--fivepx);
+}
+
+/*setting up footer properties*/
+.footer{
+    padding:30px;
+    clear:both;
+    text-align: center;
+    color:brown
+}
+
+/*setting up media properties for max-width 1000px*/
+/*the color will change to gray and flex direction will be columnar*/
+@media screen and (max-width: 1000px) {
+    main,
+    body {
+      flex-direction: column;
+      background-color: gray;
+    }
+  }
+
+/*setting up media properties for max-width 600px*/
+/*the color will change to olive and flex direction will be columnar*/  
+  @media screen and (max-width: 600px) {
+    main,
+    body {
+      flex-direction: column;
+      background-color: olive;
+    }
+  }  
+
+/*setting up the properties for Applications flex container to adjust uptil 
+screen width = 995px*/
+  @media screen and (max-width:995px) {
+    .applications
+     {  flex-direction: column;
+        flex:100%;
+        float: none;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+  }
