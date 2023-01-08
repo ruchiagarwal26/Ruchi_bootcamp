@@ -9,15 +9,13 @@
 
 ## User Story
 
-```
 AS An Engineer
 I want to create a web application on my portfolio
 This portfolio must contain my contact information and links to the work I have done so far
-    
-```
+   
 ## Ready for UAT
 
-```
+
 >> Create a web Application with below information:
      > Displayed Name on top center of the page
      > My Avatar on the right end of the page
@@ -41,7 +39,7 @@ This portfolio must contain my contact information and links to the work I have 
 
 ### I Hope you enjoy going over my Application
       
-
+```
 --------------------------------------------------------------------------------------------------------------------------------
 # 02 Advanced CSS: Portfolio
 
@@ -149,3 +147,4 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+```
